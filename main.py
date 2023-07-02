@@ -73,3 +73,8 @@ async def model_predict(input: Input):
 # Apos isso, digite "uvicorn main:app --reload" para inicializar a api, se o main.py por exemplo estiver em uma pasta fica "uvicorn pasta.main:app --reload"
 # para instalar todos os pacotes do requirements.txt : "pip install -r requirements.txt",
 #para ver se esta tudo instalado: "pip freeze"
+
+# o Docker cria um container, contendo a aplicacao e disponivel para ser executada (ele cria uma imagem da api)
+# criar um container do docker "docker build . -t prediabetes_classifier_docker"
+# excutar docker criado "docker run -p 8000:8000 prediabetes_classifier_docker"
+

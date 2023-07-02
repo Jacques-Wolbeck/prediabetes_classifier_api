@@ -11,19 +11,19 @@ version = "v1.0.0"
 #Inputo for data validation
 
 class Input(BaseModel): #o BaseModel ai, significa que a classe Input herda da classe BaseModel
-    gen_hlth: int = Field(..., gt=0)
-    high_bp: int = Field(..., gt=0)
-    high_chol: int = Field(..., gt=0)
-    bmi: int = Field(..., gt=0)
-    income: int = Field(..., gt=0)
-    diffwalk: int = Field(..., gt=0)
-    age: int = Field(..., gt=0)
-    phys_hlth: int = Field(..., gt=0)
-    education: int = Field(..., gt=0)
-    heart_disease_or_attack: int = Field(..., gt=0)
-    phys_activity: int = Field(..., gt=0)
-    men_hlth: int = Field(..., gt=0)
-    chol_check: int = Field(..., gt=0)
+    gen_hlth: int = Field(..., gt=-1)
+    high_bp: int = Field(..., gt=-1)
+    high_chol: int = Field(..., gt=-1)
+    bmi: int = Field(..., gt=-1)
+    income: int = Field(..., gt=-1)
+    diffwalk: int = Field(..., gt=-1)
+    age: int = Field(..., gt=-1)
+    phys_hlth: int = Field(..., gt=-1)
+    education: int = Field(..., gt=-1)
+    heart_disease_or_attack: int = Field(..., gt=-1)
+    phys_activity: int = Field(..., gt=-1)
+    men_hlth: int = Field(..., gt=-1)
+    chol_check: int = Field(..., gt=-1)
 
     class Config:
         schema_extra = {

@@ -6,15 +6,12 @@ curl -X POST http://127.0.0.1:8000/predict
   "high_bp": 0,
   "high_chol": 1,
   "bmi": 32,
-  "income": 5,
   "diffwalk": 0,
   "age": 5,
   "phys_hlth": 0,
   "education": 6,
   "heart_disease_or_attack": 0,
   "phys_activity": 0,
-  "men_hlth": 3,
-  "chol_check": 1
 }'
 
 # GET method info

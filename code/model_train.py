@@ -47,7 +47,7 @@ database.rename(columns={"Diabetes_012":"Diabetes_binary"}, inplace = True)
 database.drop_duplicates(inplace = True)
 
 #Diminuindo um pouco o dataset em relação a classe 'No Diabetes'
-database = pd.concat([database[database.Diabetes_binary == 0].sample(frac = 0.1) , database[database.Diabetes_binary == 1]])
+database = pd.concat([database[database.Diabetes_binary == 0].sample(frac = 0.15) , database[database.Diabetes_binary == 1]])
 
 
 """# **Aprendizado de Máquina** """
@@ -57,16 +57,13 @@ features = ['GenHlth',
             'HighBP',
             'HighChol',
             'BMI',
-            'Income',
             'DiffWalk',
             'Age',
             'PhysHlth',
             'Education',
             'HeartDiseaseorAttack',
             'PhysActivity',
-            'MentHlth',
-            'CholCheck',
-    
+
 ]
 
 target = ['Diabetes_binary']

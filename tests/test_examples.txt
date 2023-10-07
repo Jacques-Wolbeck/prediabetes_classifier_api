@@ -12,6 +12,10 @@ curl -X POST http://127.0.0.1:8000/predict
   "education": 6,
   "heart_disease_or_attack": 0,
   "phys_activity": 0,
+  "fruits": 0,
+  "veggies": 0,
+  "smoker": 1,
+  "sex": 1
 }'
 
 # GET method info

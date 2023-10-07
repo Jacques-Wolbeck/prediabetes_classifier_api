@@ -15,12 +15,14 @@ class Input(BaseModel): #o BaseModel ai, significa que a classe Input herda da c
     high_bp: int = Field(..., gt=-1)
     high_chol: int = Field(..., gt=-1)
     bmi: int = Field(..., gt=-1)
-    diffwalk: int = Field(..., gt=-1)
     age: int = Field(..., gt=-1)
     phys_hlth: int = Field(..., gt=-1)
     education: int = Field(..., gt=-1)
-    heart_disease_or_attack: int = Field(..., gt=-1)
     phys_activity: int = Field(..., gt=-1)
+    fruits: int = Field(..., gt=-1)
+    veggies: int = Field(..., gt=-1)
+    smoker: int = Field(..., gt=-1)
+    sex: int = Field(..., gt=-1)
 
     class Config:
         schema_extra = {
@@ -34,6 +36,10 @@ class Input(BaseModel): #o BaseModel ai, significa que a classe Input herda da c
             'Education': 6,
             'HeartDiseaseorAttack': 0,
             'PhysActivity': 0,
+            'Fruits': 0,
+            'Veggies': 0,
+            'Smoker': 1,
+            'Sex': 1
         }
 
 

@@ -57,13 +57,15 @@ features = ['GenHlth',
             'HighBP',
             'HighChol',
             'BMI',
-            'DiffWalk',
             'Age',
             'PhysHlth',
             'Education',
-            'HeartDiseaseorAttack',
             'PhysActivity',
-
+            'Smoker',
+            'Fruits',
+            'Sex',
+            'Veggies',
+        
 ]
 
 target = ['Diabetes_binary']

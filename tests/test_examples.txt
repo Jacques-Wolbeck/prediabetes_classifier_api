@@ -1,0 +1,25 @@
+#POST method predict
+curl -X POST http://127.0.0.1:8000/predict  
+  -H 'Content-Type: application/json' 
+  -d '{
+  "gen_hlth": 1,
+  "high_bp": 0,
+  "high_chol": 1,
+  "bmi": 32,
+  "diffwalk": 0,
+  "age": 5,
+  "phys_hlth": 0,
+  "education": 6,
+  "heart_disease_or_attack": 0,
+  "phys_activity": 0,
+  "fruits": 0,
+  "veggies": 0,
+  "smoker": 1,
+  "sex": 1
+}'
+
+# GET method info
+curl -X GET http://127.0.0.1:8000/
+
+# GET method health
+curl -X GET http://127.0.0.1:8000/health
